@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+#define ARR_SIZE 32
+#define EXCLAMATION_MARK '!'
+#define CHAR_S 'S'
+#define CHAR_ZERO '0'
+#define NUM_2 2
+
 void GetBinaryDigit(int arr[], int length);
 
 void ShiftTillRight(int arr[], int length, int count);
@@ -25,12 +31,6 @@ void PrintOperationChoiceMessage();
 void PrintShiftedBinaryNumberIs();
 
 void PrintUnsignedIntRepresentationIs();
-
-#define ARR_SIZE 32
-#define EXCLAMATION_MARK '!'
-#define CHAR_S 'S'
-#define CHAR_ZERO '0'
-#define NUM_2 2
 
 int main() {
     PrintEnterMessage();

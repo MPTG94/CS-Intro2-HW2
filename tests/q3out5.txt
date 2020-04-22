@@ -1,0 +1,5 @@
+Please enter matrix dimension: Please enter your matrix:
+Scanned matrix is:
+1 -1 
+1 -1 
+Please enter Nilpotency index: It is not 5-nilpotent matrix.

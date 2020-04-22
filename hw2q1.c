@@ -1,6 +1,11 @@
-
 #include <stdio.h>
 #include <stdbool.h>
+
+#define AT_SIGN '@'
+#define EVEN_DIGIT 2
+#define CHOICE_PIZZA 0
+#define CHOICE_RISOTTO 1
+#define CHOICE_PASTA 2
 
 void LoopLogic(char current, char previous, int numOdd, int numEven, int sum, bool monotone);
 
@@ -27,12 +32,6 @@ void PrintPizzaAndWine();
 void PrintPastaAndWine();
 
 void PrintRisottoAndWine();
-
-#define AT_SIGN '@'
-#define EVEN_DIGIT 2
-#define CHOICE_PIZZA 0
-#define CHOICE_RISOTTO 1
-#define CHOICE_PASTA 2
 
 int main() {
     char current, previous = 0;
