@@ -11,11 +11,6 @@
 ..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in3.txt > .\q2out3.txt
 ..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in4.txt > .\q2out4.txt
 ..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in5.txt > .\q2out5.txt
-..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in6.txt > .\q2out6.txt
-..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in7.txt > .\q2out7.txt
-..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in8.txt > .\q2out8.txt
-..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in9.txt > .\q2out9.txt
-..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in10.txt > .\q2out10.txt
 
 
 ..\cmake-build-debug-mingw\hw2q2.exe < .\q2cust1.txt > .\q2cout1.txt
