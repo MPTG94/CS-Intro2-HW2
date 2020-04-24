@@ -60,7 +60,7 @@ void LoopLogic(char current, char previous, int numOdd, int numEven, int sum, bo
         } else {
             numOdd++;
         }
-        if (current <= previous) {
+        if (current < previous) {
             monotone = false;
         }
         previous = current;
