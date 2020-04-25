@@ -1,0 +1,7 @@
+Please enter matrix dimension: Please enter your matrix:
+Scanned matrix is:
+0 2 1 6 
+0 0 1 2 
+0 0 0 3 
+0 0 0 0 
+Please enter Nilpotency index: It is 4-nilpotent matrix!

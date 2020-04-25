@@ -11,7 +11,11 @@ void CheckMatrixNilpotency(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension, in
 
 void PrintMatrix(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension);
 
-void MultiplyMatrix(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension);
+bool TemporaryZeroCheck(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension, int index);
+
+void CopyMatrix(int source[MATRIX_DIM][MATRIX_DIM], int destination[MATRIX_DIM][MATRIX_DIM], int dimension);
+
+void MultiplyMatrix(int first[MATRIX_DIM][MATRIX_DIM], int second[MATRIX_DIM][MATRIX_DIM], int dimension);
 
 bool IsZeroMatrix(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension);
 
@@ -53,14 +57,30 @@ void CheckMatrixNilpotency(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension, in
         PrintItIsKNilpotenetMatrix(index);
         return;
     }
+    int result[MATRIX_DIM][MATRIX_DIM] = {{0}};
+    CopyMatrix(matrix, result, dimension);
     for (int i = 1; i < index; i++) {
-        if (IsZeroMatrix(matrix, dimension)) {
-            PrintItIsNotKNilpotentMatrix(index);
+        if (TemporaryZeroCheck(result, dimension, index)) {
             return;
         }
-        MultiplyMatrix(matrix, dimension);
+        MultiplyMatrix(matrix, result, dimension);
     }
-    LastZeroCheck(matrix, dimension, index);
+    LastZeroCheck(result, dimension, index);
+}
+
+/**
+ * Performs a check if the matrix is zeroed ahead of time
+ * @param matrix The matrix to check
+ * @param dimension The matrix dimensions
+ * @param index The assumed nilpotency index of the matrix
+ * @return true if the matrix is a zero matrix, false otherwise.
+ */
+bool TemporaryZeroCheck(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension, int index) {
+    if (IsZeroMatrix(matrix, dimension)) {
+        PrintItIsNotKNilpotentMatrix(index);
+        return true;
+    }
+    return false;
 }
 
 /**
@@ -78,23 +98,37 @@ void LastZeroCheck(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension, int index)
 }
 
 /**
- * Multiplies a matrix by itself
- * @param matrix The matrix to multiply
- * @param dimension The dimensions of the matrix
+ * Copies a square matrix to a new matrix variable of the same dimensions
+ * @param source The matrix to copy
+ * @param destination The destination to copy into
+ * @param dimension The dimensions of the two matrices
  */
-void MultiplyMatrix(int matrix[MATRIX_DIM][MATRIX_DIM], int dimension) {
+void CopyMatrix(int source[MATRIX_DIM][MATRIX_DIM], int destination[MATRIX_DIM][MATRIX_DIM], int dimension) {
+    for (int i = 0; i < dimension; ++i) {
+        for (int j = 0; j < dimension; ++j) {
+            destination[i][j] = source[i][j];
+        }
+    }
+}
+
+/**
+ * Multiplies 2 square matrices with the same dimensions
+ * @param first The first matrix to multiply
+ * @param second the second matrix to multiply
+ * @param dimension The dimensions of the matrices
+ */
+void MultiplyMatrix(int first[MATRIX_DIM][MATRIX_DIM], int second[MATRIX_DIM][MATRIX_DIM], int dimension) {
     int temp[MATRIX_DIM][MATRIX_DIM] = {{0}};
     for (int i = 0; i < dimension; ++i) {
         for (int j = 0; j < dimension; ++j) {
             for (int k = 0; k < dimension; ++k) {
-                temp[i][j] += matrix[i][k] * matrix[k][i];
+                temp[i][j] += second[i][k] * first[k][j];
             }
         }
     }
-
     for (int i = 0; i < dimension; ++i) {
         for (int j = 0; j < dimension; ++j) {
-            matrix[i][j] = temp[i][j];
+            second[i][j] = temp[i][j];
         }
     }
 }

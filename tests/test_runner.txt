@@ -28,4 +28,5 @@
 ..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in5.txt > .\q3out5.txt
 ..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in6.txt > .\q3out6.txt
 ..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in7.txt > .\q3out7.txt
+..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in8.txt > .\q3out8.txt
 
