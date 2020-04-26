@@ -13,12 +13,30 @@
 ..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in13.txt > .\q1out13.txt
 ..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in14.txt > .\q1out14.txt
 ..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in15.txt > .\q1out15.txt
+..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in16.txt > .\q1out16.txt
+..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in17.txt > .\q1out17.txt
+..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in18.txt > .\q1out18.txt
+..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in19.txt > .\q1out19.txt
+..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in20.txt > .\q1out20.txt
+..\cmake-build-debug-mingw\hw2q1.exe < .\hw2q1in21.txt > .\q1out21.txt
 
 ..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in1.txt > .\q2out1.txt
 ..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in2.txt > .\q2out2.txt
 ..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in3.txt > .\q2out3.txt
 ..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in4.txt > .\q2out4.txt
 ..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in5.txt > .\q2out5.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in6.txt > .\q2out6.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in7.txt > .\q2out7.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in8.txt > .\q2out8.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in9.txt > .\q2out9.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in10.txt > .\q2out10.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in11.txt > .\q2out11.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in12.txt > .\q2out12.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in13.txt > .\q2out13.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in14.txt > .\q2out14.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in15.txt > .\q2out15.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in16.txt > .\q2out16.txt
+..\cmake-build-debug-mingw\hw2q2.exe < .\hw2q2in17.txt > .\q2out17.txt
 
 
 ..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in1.txt > .\q3out1.txt
@@ -29,4 +47,7 @@
 ..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in6.txt > .\q3out6.txt
 ..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in7.txt > .\q3out7.txt
 ..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in8.txt > .\q3out8.txt
+..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in9.txt > .\q3out9.txt
+..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in10.txt > .\q3out10.txt
+..\cmake-build-debug-mingw\hw2q3.exe < .\hw2q3in11.txt > .\q3out11.txt
 

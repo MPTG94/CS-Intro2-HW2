@@ -1,0 +1,6 @@
+Please enter a binary digit:
+Scanned binary number is:
+11111111111111111111111111111110
+Enter S for shift-right or D of unsigned int representation:
+Shifted binary number is:
+01111111111111111111111111111111
